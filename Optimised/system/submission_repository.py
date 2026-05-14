@@ -8,10 +8,10 @@ class SubmissionRepository:
     def save_submission(self, data):
         submission_id = len(self.submissions) + 1
         self.submissions[submission_id] = data
-        print(f"SubmissionRepository: Saved submission {submission_id}")
+        print(f"Saved submission {submission_id}")
         return submission_id
 
     def save_result(self, submission_id, result):
         self.results[submission_id] = result
-        print(f"SubmissionRepository: Saved result → {result}")
+        print(f"Saved result → {result}")
 

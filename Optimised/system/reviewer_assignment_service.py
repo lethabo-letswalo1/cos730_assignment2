@@ -9,5 +9,5 @@ class ReviewerAssignmentService:
         return self.filter_and_balance(reviewers)
 
     def filter_and_balance(self, reviewers):
-        print("ReviewerAssignmentService: Filtering conflicts & balancing workload...")
+        print("Filtering conflicts & balancing workload...")
         return reviewers[:2]

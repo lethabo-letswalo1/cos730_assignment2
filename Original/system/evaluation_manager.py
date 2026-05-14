@@ -13,12 +13,12 @@ class EvaluationManager:
         self.consensus = False
 
     def submit_score(self, score):
-        print(f"EvaluationManager: Receiving score {score}...")
+        print(f"Receiving score {score}...")
         self.scores.append(score)
         self.database.save_score(score)
 
     def start_evaluation(self):
-        print("EvaluationManager: Starting evaluation...")
+        print("Starting evaluation...")
         self.scores = []
         self.average = 0.0
         self.consensus = False
@@ -39,7 +39,7 @@ class EvaluationManager:
         self.notification_service.send_notification()
 
     def calculate_average(self):
-        print("EvaluationManager: Calculating average...")
+        print("Calculating average...")
         if not self.scores:
             return 0.0
         avg = sum(self.scores) / len(self.scores)
@@ -47,11 +47,11 @@ class EvaluationManager:
         return avg
 
     def check_consensus(self):
-        print("EvaluationManager: Checking consensus...")
+        print("Checking consensus...")
         return True
 
     def apply_rules(self):
-        print("EvaluationManager: Applying rules...")
+        print("Applying rules...")
 
         if self.average >= 75 and self.consensus:
             return "accepted"

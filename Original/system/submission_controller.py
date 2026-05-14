@@ -19,14 +19,14 @@ class SubmissionController:
             return
 
         confirmation = self.database.save_submission(data)
-        print(f"SubmissionController: {confirmation}")
+        print(f"{confirmation}")
         
         filtered_reviewers = self.reviewer_manager.get_available_reviewers()
 
         reviewers = []
 
         for reviewer_data in filtered_reviewers:
-            print(f"Assigning reviewer: {reviewer_data}")
+            print(f"{reviewer_data}")
             name = reviewer_data["name"]
             reviewer = Reviewer(name)
             reviewer.assign_review()

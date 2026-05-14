@@ -2,7 +2,7 @@ import streamlit as st
 from system.ui import UI
 
 st.title("Intelligent Submission and Review System")
-st.subheader("Task 1 - Baseline Implementation")
+st.subheader("Task 5 - Optimised Implementation")
 
 title = st.text_input("Research Title")
 content = st.text_area("Research Content")

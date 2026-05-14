@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/lethabo.letswalo/VS Code Projects/cos730_assignment2/Baseline/venv/bin/python3" "$0" "$@"
+'''exec' "/Users/lethabo.letswalo/VS Code Projects/cos730_assignment2/Original/venv/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

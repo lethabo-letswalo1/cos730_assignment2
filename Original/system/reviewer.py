@@ -10,5 +10,5 @@ class Reviewer:
 
     def submit_score(self, evaluation_manager):
         score = random.randint(0, 100)
-        print(f"Reviewer ({self.name}): Submitting score {score} to EvaluationManager...")
+        print(f"Reviewer ({self.name}): Submitting score {score}...")
         evaluation_manager.submit_score(score)

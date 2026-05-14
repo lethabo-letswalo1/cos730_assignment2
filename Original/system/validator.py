@@ -8,5 +8,5 @@ class Validator:
             st.error("Validation failed.")
             return False
 
-        st.success("Validation successful.")
+        print("Validation successful.")
         return True

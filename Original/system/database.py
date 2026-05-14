@@ -11,13 +11,13 @@ class Database:
         self.scores = []
             
     def save_submission(self, data):
-        print(f"Database: Saving submission... {data['title']}")
+        print(f"Saving submission... {data['title']}")
         return "confirmation"
 
     def fetch_reviewers(self):
-        print("Database: Fetching reviewers...")
+        print("Fetching reviewers...")
         return self.reviewer_list
 
     def save_score(self, score):
-        print(f"Database: Saving score {score}")
+        print(f"Saving score {score}")
         self.scores.append(score)
